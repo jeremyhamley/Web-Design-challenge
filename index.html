@@ -47,40 +47,93 @@
         </div>
         <div class="row mb-4">
             <div class="col">
-                <h5>lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velite esse cillum
+                <h5>What is the correlation between the weather and proximity to the equator?
+                    <p>The Latitude vs The Forces of Nature project looks to answer this question by analyzing the
+                        weather data of 550 cities chosen at random from around the world.</p>
                 </h5>
             </div>
         </div>
+    </div>
 
+    <div class="container-fluid m-2">
         <div class="row"> ​
-            <div class="col-sm-12 col-md-6">
-                <p>lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velite esse cillum
-                    lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velite esse cillum
+            <div class="col-sm-12 col-md-9">
+                <h5>PyCity</h5>
+                <p>To begin this project, 500+ cities were selected at random from around the globe. The cities were
+                    selected by using
+                    Numpy to generate random latitude and longitude coordinates and the Python library CityPy was used
+                    to record the city closest to
+                    the random latitude and longitude coordinates.
+                </p><br>
+                <img src="WebVisualizations/images/city.jpg" class="img-fluid" alt="city">
+                <br><br>
+                <h5>API - OpenWeather</h5>
+                <p>The next step was to collect the weather data for each city. Using the city ID provided by CityPy, an
+                    API call was made
+                    to openweathermap.org to record various weather measuments for each city.
                 </p>
+                <p>The areas of focus:</p>
+                <ul>
+                    <li>Latitude vs Max Temperature</li>
+                    <li>Latitude vs Humidity</li>
+                    <li>Latitude vs Cloudiness</li>
+                    <li>Latitude vs Wind Speed</li>
+                </ul>
+                <img src="WebVisualizations/images/sky.jpg" class="img-fluid" alt="sky"><br><br>
             </div>
-            <div class="col-sm-6 col-md-3 mb-4">
-                <center><a href="WebVisualizations/max_temp.html"><img src="WebVisualizations/images/max_thumb.png" class="img-fluid" alt="Latitude vs Max Temperature"></a></center>  
-            </div>
-            <div class="col-sm-6 col-md-3 mb-4">
-                <center><a href="WebVisualizations/humid.html"><img src="WebVisualizations/images/humid_thumb.png" class="img-fluid" alt="Latitude vs Humidity"></a></center>
-                
-            </div>
-        </div>
 
-        <div class="row"> ​
-            <div class="col-sm-12 col-md-6">
-            </div>
-            <div class="col-sm-6 col-md-3 mb-4">
-                <center><a href="WebVisualizations/cloud.html"><img src="WebVisualizations/images/cloud_thumb.png" class="img-fluid" alt="Latitude vs Cloudiness"></a></center>
-            </div>
-            <div class="col-sm-6 col-md-3 mb-4">
-                <center><a href="WebVisualizations/wind.html"><img src="WebVisualizations/images/wind_thumb.png" class="img-fluid" alt="Latitude vs Wind Speed"></a></center>
+            <div class="col-sm-6 col-md-3 ml-auto">
+                <aside class="sidebar">
+                    <div class="card mb-4">
+                        <div class="card-body background">
+                            <center>
+                                <h5 class="card-title">Max Temperature</h5>
+                            </center>
+                            <center><a href="WebVisualizations/max_temp.html"><img
+                                        src="WebVisualizations/images/max_thumb.png" class="img-fluid"
+                                        alt="Latitude vs Max Temperature"></a></center>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="sidebar">
+                    <div class="card mb-4">
+                        <div class="card-body background">
+                            <center>
+                                <h5 class="card-title">Humidity</h5>
+                            </center>
+                            <center><a href="WebVisualizations/humid.html"><img
+                                        src="WebVisualizations/images/humid_thumb.png" class="img-fluid"
+                                        alt="Latitude vs Humidity"></a></center>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="sidebar">
+                    <div class="card mb-4">
+                        <div class="card-body background">
+                            <center>
+                                <h5 class="card-title">Cloudiness</h5>
+                            </center>
+                            <center><a href="WebVisualizations/cloud.html"><img
+                                        src="WebVisualizations/images/cloud_thumb.png" class="img-fluid"
+                                        alt="Latitude vs Cloudiness"></a></center>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="sidebar">
+                    <div class="card mb-4">
+                        <div class="card-body background">
+                            <center>
+                                <h5 class="card-title">Wind Speed</h5>
+                            </center>
+                            <center><a href="WebVisualizations/wind.html"><img
+                                        src="WebVisualizations/images/wind_thumb.png" class="img-fluid"
+                                        alt="Latitude vs Wind Speed"></a></center>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
-     </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
